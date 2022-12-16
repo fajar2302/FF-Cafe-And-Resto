@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Lato&family=Marck+Script&family=Merriweather+Sans:wght@500&family=Oswald:wght@500&family=Quicksand&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+.skip-nav {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background-color: #00adb5;
+  color: white;
+  padding: 8px;
+  z-index: 100;
+  text-decoration: none;
+}
+
+.skip-nav:focus {
+  top: 0;
+}
+
+/* Navigasi start */
+
+.nav-menu {
+  display: flex;
+  background-color: #222831;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+}
+.brand {
+  color: #eeeeee;
+}
+
+.nav-menu ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+
+.nav-menu ul li a {
+  text-decoration: none;
+  text-align: center;
+  color: #eeeeee;
+  padding: 14px 20px;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+
+.nav-menu ul li a:hover {
+  text-decoration: none;
+  background-color: #00adb5;
+  /* padding: 14px 20px; */
+}
+
+#toogle {
+  display: none;
+}
+
+/* navigasi End */
+
+#main {
+  padding: 30px;
+}
+.hero {
+  display: grid;
+}
+
+.hero-image {
+  height: 100%;
+  min-height: 500px;
+  text-align: center;
+  background-color: #393e46;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../public/images/hero-image_1-1200.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero-list {
+  margin-top: 15%;
+}
+.hero-text {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-family: 'Merriweather Sans', sans-serif;
+  text-align: center;
+  color: white;
+}
+
+.hero-button {
+  border-radius: 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+  width: 50%;
+  margin: 2% 25%;
+}
+
+.hero-button button {
+  font-size: 16px;
+  padding: 12px 0;
+  width: 20%;
+  border-radius: 10px;
+}
+
+button:hover {
+  background-color: #393e46;
+  color: #eeeeee;
+}
+
+/* grid menu start-here */
+
+.grid-menu {
+  padding: 30px;
+}
+
+.text-menu {
+  font-size: 18px;
+  text-align: center;
+  color: #393e46;
+  text-transform: uppercase;
+}
+
+.item-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px 20px;
+  margin: 40px 70px;
+  text-align: left;
+}
+
+.grid-list {
+  box-shadow: 0 4px 8px #393e46;
+  width: 100%;
+  border-radius: 5px;
+  display: grid;
+  cursor: pointer;
+}
+
+.image-list {
+  width: 100%;
+  height: 100%;
+  height: 50vh;
+}
+
+.list-descript {
+  padding: 2%;
+}
+
+.anchor {
+  text-decoration: none;
+}
+.list-descript h4 {
+  text-decoration: none;
+  color: #3e5477;
+}
+.text {
+  color: #222831;
+  font-family: 'Merriweather', sans-serif;
+  line-height: 20px;
+  text-transform: uppercase;
+  padding: 1%;
+}
+
+.list-descript button {
+  padding: 10px;
+  background-color: #222831;
+  border-radius: 10px;
+  font-size: 14px;
+  color: #eeeeee;
+  border: 1px solid;
+}
+
+.list-descript button:hover {
+  background-color: #00adb5;
+}
+
+button:focus {
+  outline: 4px solid #00adb5;
+}
+
+input:focus {
+  outline: 4px solid #00adb5;
+}
+
+/* grid-menu end here */
+
+/* Detail Restaurant Start */
+.text-title {
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  margin-bottom: 10px;
+  color: #3e5477;
+}
+.detail {
+  margin: 0 auto;
+  width: 100%;
+  max-width: max-content;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px 0;
+}
+.detail_image {
+  width: 100%;
+  height: 100%;
+  max-height: 1000px;
+  border-radius: 10px;
+}
+.deskripsi {
+  text-align: justify;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+}
+.detail_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.detail_text {
+  margin-bottom: 20px;
+}
+
+.detail_info p {
+  margin-left: 10px;
+}
+
+.menus {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 5px;
+  padding: 2% 20%;
+}
+.text-list {
+  text-align: center;
+}
+
+.menus-list {
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px #393e46;
+  width: 100%;
+  max-width: 300px;
+  background-color: #3e5477;
+}
+
+.menus-list li,
+.menus-list p {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 17px;
+  margin-bottom: 10px;
+  color: #eeeeee;
+}
+
+/* reviews */
+
+.customer h3 {
+  font-size: 16px;
+}
+.customer {
+  margin-top: 20px;
+}
+
+.customer-review {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 50px;
+  width: 100%;
+  max-width: fit-content;
+  padding: 20px;
+}
+
+.customer-card {
+  padding: 10px;
+  box-shadow: 0 4px 8px #393e46;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 350px;
+}
+.customer-card p {
+  margin: 10px 0;
+  align-items: center;
+  display: flex;
+}
+
+.customer-date {
+  font-size: 14px;
+  color: #3e5477;
+}
+
+.customer-card p span {
+  margin-right: 10px;
+}
+/* Detail Restaurant End  */
+
+/* Like */
+
+.like {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #db0000;
+
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  border-radius: 50%;
+  border: 0;
+
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+}
+
+/* endlike */
+
+/* Footer */
+
+footer {
+  background-color: #222831;
+  padding: 15px;
+}
+
+footer p {
+  color: #eeeeee;
+  font-size: 16px;
+  text-align: center;
+  opacity: 0.6;
+}
+
+/* Footer end */

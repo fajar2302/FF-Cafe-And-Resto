@@ -9,7 +9,7 @@ import 'lazysizes/plugins/parent-fit/ls.parent-fit';
 const createRestoTemplate = (resto) => `
 <a class="anchor" href="/#/detail/${resto.id}" aria-label="detail-toogler">
   <article class="grid-list">
-    <img class="image-list lazyload" src="${CONFIG.BASE_IMAGE_URL}${resto.pictureId}" alt="${resto.name}" />
+    <img class="image-list lazyload" data-src="${CONFIG.BASE_IMAGE_URL}${resto.pictureId}" alt="${resto.name}" />
     <div class="list-descript">
         <h4 class="text">${resto.name}</h4>
         <p class="text">${resto.city}</p>
@@ -22,7 +22,7 @@ const createRestoTemplate = (resto) => `
 const createRestoDetailTemplate = (resto) => `
   <h1 class="text-title">${resto.name}</h1>
   <div class="detail_grid">
-    <img class="detail_image lazyload" src="${CONFIG.BASE_IMAGE_URL}${resto.pictureId}" alt="${resto.name}" />
+    <img class="detail_image lazyload" data-src="${CONFIG.BASE_IMAGE_URL}${resto.pictureId}" alt="${resto.name}" />
     <div class="detail_info">
         <h4 class="detail_text">Kota</h4>
         <p  class="detail_text">${resto.city}</p>
